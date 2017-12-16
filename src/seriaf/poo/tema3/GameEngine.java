@@ -9,7 +9,7 @@ public class GameEngine {
     private Thread loop = new Thread(
             () -> {
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(10000);
                     Thread.currentThread().interrupt();
                     guess(-1);
                 } catch (InterruptedException e) {
